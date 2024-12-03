@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(assets/bg-home.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Inter", sans-serif;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.container-home {
+  width: 120px;
+  height: 200px;
+}
+
+.container-nav {
+  background-color: rgb(0, 0, 0, 0.7);
+}
+
+
+.modal-win {
+  background-color: rgba(89, 88, 88, 0.4);
+  width: 650px;
+  height: 750px;
+  
+  margin-top: -140px;
+}
+
+.search-modal input {
+  width: 90%; 
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding-left: 30px; /* Espaço para o ícone */
+  border: none;
+  background-image: url('assets/search-modal.svg');
+  background-repeat: no-repeat;
+  background-position: 10px center; /* Alinha o ícone no início do campo */
+  background-size: 18px 18px; /* Ajuste o tamanho do ícone */
+  margin-left: 32px;
+  margin-top: 10px;
+  border-radius: 25px;
+}
+
+.search-modal input::placeholder{
+  color: white;
+}
+
+/* Parei acima, daqui para baixo é a aula */
+
+.search-modal p {
+  font-weight: 300;
+  font-size: 12px;
+}
+.container-header{
+  font-size: 0.95em;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 1.5em 1em;
+  align-items: center;
+}
+.second-app-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+}
+
+.second-app-container div {
+  border-radius: 0.3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2em;
+  cursor: pointer;
+  color: white;
+}
+
+#article-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 1em;
+}
+
+#article-container>div {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1em;
+  padding: 0.5em;
+  border-radius: 0.3em;
+  align-items: center;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.text-article {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-article :nth-child(2) {
+  opacity: 70%;
+}
+
+
+
+
